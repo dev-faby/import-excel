@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	Nouveau Donnée
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="row my-2">
+			<h1 class="text-center">Nouveau Donnée</h1>
+			{{ form_start(form) }}
+                {{ form_row(form.CompteAffaire) }}
+                {{ form_row(form.CompteEvenement) }}
+                {{ form_row(form.CompteDernierEvenement) }}
+                {{ form_row(form.NumeroDeFiche) }}
+                {{ form_row(form.LibelleCivilite) }}
+                {{ form_row(form.ProprietaireActuelDuVehicule) }}
+                {{ form_row(form.Nom) }}
+                {{ form_row(form.Prenom) }}
+                {{ form_row(form.NumNomDeLaVoie) }}
+                {{ form_row(form.ComplementAdresse1) }}
+                {{ form_row(form.CodePostal) }}
+                {{ form_row(form.Ville) }}
+                {{ form_row(form.TelephoneDomicile) }}
+                {{ form_row(form.TelephonePortable) }}
+                {{ form_row(form.TelephoneJob) }}
+                {{ form_row(form.Email) }}
+                {{ form_row(form.DateDeMiseEnCirculation) }}
+                {{ form_row(form.DateAchat) }}
+                {{ form_row(form.DateDernierEvenement) }}
+                {{ form_row(form.LibelleMarque) }}
+                {{ form_row(form.LibelleModele) }}
+                {{ form_row(form.Version) }}
+                {{ form_row(form.Vin) }}
+                {{ form_row(form.TypeDeProspect) }}
+                {{ form_row(form.Kilometrage) }}
+                {{ form_row(form.LibelleEnergie) }}
+                {{ form_row(form.VendeurVn) }}
+                {{ form_row(form.VendeurVo) }}
+                {{ form_row(form.CommentaireDeFacturation) }}
+                {{ form_row(form.TypeVnVo) }}
+                {{ form_row(form.NumeroDeDossierVnVo) }}
+                {{ form_row(form.Immatriculation) }}
+                {{ form_row(form.IntermediaireDeVenteVn) }}
+                {{ form_row(form.DateEvenementVeh) }}
+                {{ form_row(form.OrigineEvenementVeh) }}
+
+			<div class="d-grid gap-2">
+				<button class="btn btn-primary" type="submit">Enregistre</button>
+			</div>
+			{{ form_end(form) }}
+		</div>
+	</div>
+{% endblock %}
